@@ -5,21 +5,46 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="styles.css">
+        <title> Experiment with Table </title>
     </head>
     <body>
-        <div>
+        <input type="text" id="updateId" style="display: none;">
+        <table id="table2" style="width: 100%; border: 1px solid teal;">
+            <tr>
+                <th>Image</th>
+                <th>Location Name</th>
+                <th>Address</th>
+                <th>Rating</th>
+                <th>Actions</th>
+            </tr>
+            <!-- <tr>
+                <td><img src="images/sundarbans.jpg" alt="Sundarbans"></td>
+                <td>Sundarbans</td>
+                <td>Khulna, Bangladesh</td>
+                <td>8.7</td>
+                <td>
+                    <span>
+                        <input type="button" value="Update">&nbsp;<input type="button" value="Delete">
+                    </span>
+                </td>
+            </tr> -->
+        </table>
+        <div style="width: 100%;">
             <input type="file" id="spotImage" accept="image/*">
             <br> <br>
 
             <input type="button" id="imageSubmit" value="Submit Image">
             <br> <br>
+            
+            <!-- <textarea name="" id="image64" cols="100" rows="60"></textarea>
+            <br> <br> -->
 
-            <p id="imageBase64"></p>
             <img src="" id="preview" alt="Image Preview">
             <br> <br>
 
-            <img src="" id="preview2" alt="Image Preview 2">
-            <br> <br>
+            <!-- <img src="" id="preview2" alt="Image Preview 2">
+            <br> <br> -->
+
 
         </div>
     </body>

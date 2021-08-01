@@ -5,3 +5,17 @@ div *{
 body div {
     background-color: ghostwhite;
 }
+
+td img {
+    width: 120px;  /* 16:9 ratio */
+    height: 68px;
+}
+
+span {
+    white-space: nowrap;
+}
+
+/* #table2{
+    display: block;
+    overflow: auto;
+} */
