@@ -1,0 +1,7 @@
+div *{
+    display: block;
+}
+
+body div {
+    background-color: ghostwhite;
+}

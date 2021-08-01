@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Sundarbans",
+        "address": "Khulna, Bangladesh",
+        "rating": "9.0",
+        "image": "some-url"
+    },
+    {
+        "name": "Saint Martin Island",
+        "address": "Chottogram, Bangladesh",
+        "rating": "9.7",
+        "image": "some-url"
+    },
+    {
+        "name": "kaptai Lake",
+        "address": "Chottogram, Bangladesh",
+        "rating": "7.4",
+        "image": "some-url"
+    },
+    {
+        "name": "Jaflong",
+        "address": "Sylhet, Bangladesh",
+        "rating": "8.3",
+        "image": "some-url"
+    }
+
+]
