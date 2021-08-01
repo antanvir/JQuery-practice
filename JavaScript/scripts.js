@@ -1,14 +1,34 @@
+let touristSpots = [];
+let sortOrder = "", searchString = "";
+let assignId = generateId();
+
 $(document).ready(function () {
-    $.get("places.json", function (data, status) {
+    $.get("places.json", function (dummyData, status) {
         console.log("Status: " + status);
         // console.log("Data: " + data);
-        console.log(data[0], data[3]);
-
+        console.log(dummyData[0], dummyData[3]);
+        insertIntoTouristSpotsArray(dummyData);
         $("#imageSubmit").click(convertImageToBase64);
 
     });
 });
 
+function generateId() {
+    let id = 0;
+    return function() {
+        return id++;
+    };
+}
+
+function insertIntoTouristSpotsArray(dummyData) {
+    dummyData.forEach(spot => {
+        spot["id"] = assignId();
+        spot["isAMatch"] = false;
+
+        console.log(spot);
+        touristSpots.push(spot);
+    });
+}
 
 function convertImageToBase64() {
     let imageFile = $("#spotImage").prop("files")[0];
